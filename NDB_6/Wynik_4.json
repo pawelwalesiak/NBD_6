@@ -1,0 +1,202 @@
+﻿[
+  {
+    "airport_iata": "SAT",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "FLL",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "KOA",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "SMF",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "RIC",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "IND",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "MCI",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "MSN",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "BIL",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "ROC",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "CLT",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "DCA",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "PBI",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "MIA",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "MOB",
+    "flights_counter": 1
+  },
+  {
+    "airport_iata": "SNA",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "LAS",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "ATL",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "CMH",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "SJC",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "LGA",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "TUS",
+    "flights_counter": 2
+  },
+  {
+    "airport_iata": "SEA",
+    "flights_counter": 3
+  },
+  {
+    "airport_iata": "PHX",
+    "flights_counter": 3
+  },
+  {
+    "airport_iata": "SBN",
+    "flights_counter": 3
+  },
+  {
+    "airport_iata": "MCO",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "PDX",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "BOS",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "DFW",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "SAN",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "BHM",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "CVG",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "ABQ",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "FAT",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "DLH",
+    "flights_counter": 4
+  },
+  {
+    "airport_iata": "SLC",
+    "flights_counter": 5
+  },
+  {
+    "airport_iata": "HNL",
+    "flights_counter": 5
+  },
+  {
+    "airport_iata": "FSD",
+    "flights_counter": 5
+  },
+  {
+    "airport_iata": "EWR",
+    "flights_counter": 7
+  },
+  {
+    "airport_iata": "MOT",
+    "flights_counter": 8
+  },
+  {
+    "airport_iata": "MSP",
+    "flights_counter": 9
+  },
+  {
+    "airport_iata": "IAD",
+    "flights_counter": 12
+  },
+  {
+    "airport_iata": "BNA",
+    "flights_counter": 12
+  },
+  {
+    "airport_iata": "AZO",
+    "flights_counter": 13
+  },
+  {
+    "airport_iata": "SFO",
+    "flights_counter": 14
+  },
+  {
+    "airport_iata": "DEN",
+    "flights_counter": 18
+  },
+  {
+    "airport_iata": "LAX",
+    "flights_counter": 22
+  },
+  {
+    "airport_iata": "IAH",
+    "flights_counter": 23
+  },
+  {
+    "airport_iata": "DTW",
+    "flights_counter": 25
+  },
+  {
+    "airport_iata": "ORD",
+    "flights_counter": 48
+  }
+]

@@ -1,0 +1,3 @@
+﻿flight.airline,count(distinct flightCity)
+19977,50
+20304,37

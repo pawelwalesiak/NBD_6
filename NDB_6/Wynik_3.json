@@ -1,0 +1,82 @@
+﻿[
+  {
+    "rels": [
+      {
+        "identity": 280,
+        "start": 170,
+        "end": 171,
+        "type": "twowheeler",
+        "properties": {
+"name": "Darjeeling-BhikePhanja",
+"winter": "true",
+"distance": 2,
+"summer": "true"
+        }
+      },
+      {
+        "identity": 281,
+        "start": 171,
+        "end": 172,
+        "type": "twowheeler",
+        "properties": {
+"name": "BhikeBhanja-Sandakphu",
+"winter": "true",
+"distance": 1,
+"summer": "true"
+        }
+      }
+    ],
+    "distance": 3
+  },
+  {
+    "rels": [
+      {
+        "identity": 279,
+        "start": 170,
+        "end": 172,
+        "type": "twowheeler",
+        "properties": {
+"name": "Darjeeling-Sandakphu",
+"winter": "true",
+"distance": 8,
+"summer": "true"
+        }
+      }
+    ],
+    "distance": 8
+  },
+  {
+    "rels": [
+      {
+        "identity": 277,
+        "start": 170,
+        "end": 172,
+        "type": "twowheeler",
+        "properties": {
+"name": "Darjeeling-Sandakphu",
+"winter": "true",
+"distance": 11,
+"summer": "true"
+        }
+      }
+    ],
+    "distance": 11
+  },
+  {
+    "rels": [
+      {
+        "identity": 278,
+        "start": 170,
+        "end": 172,
+        "type": "twowheeler",
+        "properties": {
+"name": "Darjeeling-Sandakphu",
+"winter": "true",
+"distance": 12,
+"summer": "true"
+        }
+      }
+    ],
+    "distance": 12
+  }
+]

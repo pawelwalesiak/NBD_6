@@ -1,0 +1,10 @@
+﻿[
+  {
+    "flight.airline": "19977",
+    "count(distinct flightCity)": 50
+  },
+  {
+    "flight.airline": "20304",
+    "count(distinct flightCity)": 37
+  }
+]

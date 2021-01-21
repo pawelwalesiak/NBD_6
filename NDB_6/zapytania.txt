@@ -1,0 +1,67 @@
+//Zad1
+MATCH shortestPaths = allShortestPaths((darjeeling:town{name:"Darjeeling"})-[*]->(sandakphu:peak{name:"Sandakphu"})) RETURN shortestPaths
+
+//Zad2
+MATCH shortestPaths = allShortestPaths((darjeeling:town {name: 'Darjeeling'})-[*]->(sandakphu:peak {name: 'Sandakphu'}))
+WHERE ALL (x IN relationships(shortestPaths) WHERE x.winter = "true")
+RETURN shortestPaths
+
+
+//Zad3
+MATCH (d:town {name: "Darjeeling"})-[rels:twowheeler*]->(s:peak {name:"Sandakphu"})
+WHERE ALL(rel in rels WHERE rel.summer = "true")
+UNWIND [r in rels] as paths
+RETURN rels, sum(paths.distance) as distance
+ORDER BY distance ASC
+
+//Zad4
+MATCH (originAirport:Airport)<-[:ORIGIN*]-(f:Flight)
+WITH originAirport.name as airport_iata, count(f) as flights_counter
+return airport_iata, flights_counter
+ORDER BY flights_counter
+
+//Zad5
+MATCH path = (originAirport:Airport {name:"LAX"})<-[r:ORIGIN|DESTINATION*..5]->(dstAirport:Airport)
+WITH path, REDUCE(accPrice = 0, flight_node IN [n IN NODES(path) WHERE 'Flight' IN LABELS(n)] | accPrice + [(flight_node)<-[:ASSIGN]-(ticket: Ticket {class: "economy"}) | ticket.price][0]) as totalPrice, dstAirport
+WHERE totalPrice < 3000 and dstAirport.name <> "LAX" and type(head(relationships(path))) = 'ORIGIN'
+RETURN path, totalPrice
+ORDER BY totalPrice
+
+//Zad6
+MATCH path = (originAirport:Airport {name:"LAX"})<-[r:ORIGIN|DESTINATION*..5]->(dstAirport:Airport {name: "DAY"})
+WITH path, REDUCE(accPrice = 0, flight_node IN [n IN NODES(path) WHERE 'Flight' IN LABELS(n)] | accPrice + [(flight_node)<-[:ASSIGN]-(ticket: Ticket {class: "economy"}) | ticket.price][0]) as totalPrice
+WHERE type(head(relationships(path))) = 'ORIGIN'
+RETURN path, totalPrice
+ORDER BY totalPrice
+
+
+
+//Zad7
+MATCH path = (originAirport:Airport {name:"LAX"})<-[r:ORIGIN|DESTINATION*..5]->(dstAirport:Airport {name: "DAY"})
+WITH path, REDUCE(accPrice = 0, flight_node IN [n IN NODES(path) WHERE 'Flight' IN LABELS(n)] | accPrice + [(flight_node)<-[:ASSIGN]-(ticket: Ticket {class: "economy"}) | ticket.price][0]) as totalPrice
+WHERE type(head(relationships(path))) = 'ORIGIN'
+RETURN path, totalPrice
+ORDER BY totalPrice
+
+
+//Zad8
+MATCH path = (originAirport:Airport {name:"LAX"})<-[r:ORIGIN|DESTINATION*..5]->(dstAirport:Airport {name: "DAY"})
+WITH path, REDUCE(accPrice = 0, flight_node IN [n IN NODES(path) WHERE 'Flight' IN LABELS(n)] | accPrice + [(flight_node)<-[:ASSIGN]-(ticket: Ticket {class: "business"}) | ticket.price][0]) as totalPrice
+WHERE type(head(relationships(path))) = 'ORIGIN'
+RETURN path, totalPrice
+ORDER BY totalPrice ASC
+LIMIT 1
+
+//Zad9
+MATCH (originAirport:Airport)<-[:ORIGIN]-(flight:Flight)-[:DESTINATION]->(dstAirport:Airport)
+WITH [originAirport.name, dstAirport.name, flight.airline] as connection, flight
+RETURN flight.airline, count(DISTINCT connection)
+
+//Zad10
+MATCH path = (originAirport:Airport)<-[r:ORIGIN|DESTINATION*4..4]->(dstAirport:Airport)
+WHERE originAirport <> dstAirport
+WITH path, REDUCE(accPrice = 0, flight_node IN [n IN NODES(path) WHERE 'Flight' IN LABELS(n)] | accPrice + [(flight_node)<-[:ASSIGN]-(ticket: Ticket {class: "economy"}) | ticket.price][0]) as totalPrice
+WHERE type(head(relationships(path))) = 'ORIGIN'
+RETURN path, totalPrice
+ORDER BY totalPrice ASC
+LIMIT 1

@@ -1,0 +1,156 @@
+﻿[
+  {
+    "path": {
+"start": {
+"identity": 5,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "LAX"
+        }
+      },
+"end": {
+"identity": 70,
+"labels": [
+          "Airport"
+        ],
+"properties": {
+"name": "DAY"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 5,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "LAX"
+            }
+          },
+          "relationship": {
+"identity": 1535,
+"start": 1323,
+"end": 5,
+"type": "ORIGIN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 1323,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "15/30/2015 10:24:12",
+"duration": 180,
+"distance": 1980,
+"airline": "19977"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 1323,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "15/30/2015 10:24:12",
+"duration": 180,
+"distance": 1980,
+"airline": "19977"
+            }
+          },
+          "relationship": {
+"identity": 1536,
+"start": 1323,
+"end": 18,
+"type": "DESTINATION",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 18,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "DFW"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 18,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "DFW"
+            }
+          },
+          "relationship": {
+"identity": 1540,
+"start": 1327,
+"end": 18,
+"type": "ORIGIN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 1327,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "15/30/2015 13:24:12",
+"duration": 150,
+"distance": 1536,
+"airline": "19977"
+            }
+          }
+        },
+        {
+          "start": {
+"identity": 1327,
+"labels": [
+              "Flight"
+            ],
+"properties": {
+"date": "15/30/2015 13:24:12",
+"duration": 150,
+"distance": 1536,
+"airline": "19977"
+            }
+          },
+          "relationship": {
+"identity": 1541,
+"start": 1327,
+"end": 70,
+"type": "DESTINATION",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 70,
+"labels": [
+              "Airport"
+            ],
+"properties": {
+"name": "DAY"
+            }
+          }
+        }
+      ],
+"length": 4.0
+    },
+    "totalPrice": 2086
+  }
+]
